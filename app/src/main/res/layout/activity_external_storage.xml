@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.eaj.tads.cameraapp.ExternalStorageActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foto no Armazenamento Externo"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="29dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="13dp" />
+
+    <Button
+        android:id="@+id/buttonTakePhotoExternal"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:onClick="takePhotoAndSaveExternally"
+        android:text="Nova Foto"
+        app:layout_constraintRight_toLeftOf="@+id/buttonReadExternal"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonReadExternal"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/buttonReadExternal"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:onClick="readPhotoExternally"
+        android:text="Ver foto"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="132dp"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:id="@+id/imageViewExterno"
+        android:layout_width="222dp"
+        android:layout_height="200dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTakePhotoExternal"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="73dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="77dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>

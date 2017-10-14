@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btnInterno"
+        android:onClick="goToInternalStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="salvar foto no armazanamento interno"
+        android:layout_marginTop="112dp"/>
+
+    <Button
+        android:id="@+id/btnBanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:onClick="goToDataBase"
+        android:text="salvar foto em um banco de dados" />
+
+    <Button
+        android:id="@+id/btnExterno"
+        android:onClick="goToExternalStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="salvar foto no armazenamento externo"
+        android:textColor="@android:color/white" />
+</LinearLayout>
